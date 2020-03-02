@@ -1,0 +1,8 @@
+         CLIPS (6.31 6/12/19)
+CLIPS> (printout t "hello again" crlf)
+hello again
+CLIPS> (printout t "hello again" (* 3 15)  crlf)
+hello again45
+CLIPS> (* 4 3.5)
+14.0
+CLIPS> 
