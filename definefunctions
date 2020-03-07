@@ -1,0 +1,37 @@
+         CLIPS (6.31 6/12/19)
+CLIPS> (printout t *The product is * (* 4 66) crlf)
+*Theproductis*264
+CLIPS> (printout t "The product is" (* 4 66) crlf)
+The product is264
+CLIPS> (printout t "The product is: " (* 4 66) crlf)
+The product is: 264
+CLIPS> (clear)
+CLIPS> (definetemplate person *define * person* (int))
+
+[EXPRNPSR3] Missing function declaration for definetemplate.
+CLIPS> (definetemplate person *define * person* (sint age))
+
+[EXPRNPSR3] Missing function declaration for definetemplate.
+CLIPS> (facts)
+f-0     (initial-fact)
+For a total of 1 fact.
+CLIPS> (person 0)
+
+[EXPRNPSR3] Missing function declaration for person.
+CLIPS> (person (Age 5))
+
+[EXPRNPSR3] Missing function declaration for person.
+CLIPS> (definetemplate person *define "person" (sint age))
+
+[EXPRNPSR3] Missing function declaration for definetemplate.
+CLIPS> (definetemplate person 
+(slot name (type STRING))
+(slot gender (type SYMBOL)(allowed-symbols m f)); male, female
+)
+
+[EXPRNPSR3] Missing function declaration for definetemplate.
+CLIPS> (deffunction sound_animal())
+CLIPS> (sound_animal(sound moo))
+
+[EXPRNPSR3] Missing function declaration for sound.
+CLIPS> (
